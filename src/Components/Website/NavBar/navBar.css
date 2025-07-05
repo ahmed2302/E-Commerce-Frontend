@@ -1,0 +1,72 @@
+/* تحسينات العناوين */
+.category-title {
+  transition: color 0.3s ease;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.category-title:hover {
+  color: #4a6ef1 !important;
+  background-color: rgba(74, 110, 241, 0.1);
+}
+
+/* تحسين البحث */
+.custom-search {
+  color: #333 !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.custom-search:focus {
+  box-shadow: 0 0 5px rgba(74, 110, 241, 0.3) !important;
+  border-color: #4a6ef1 !important;
+  outline: none !important;
+}
+
+/* زر البحث */
+.my-primary-btn {
+  background-color: #4a6ef1;
+  color: #fff;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.my-primary-btn:hover {
+  background-color: #3b5bd8;
+}
+
+/* تحسينات المودال */
+.modal-content {
+  border-radius: 12px;
+}
+
+.modal-header,
+.modal-footer {
+  border: none;
+}
+
+/* تحسين عرض المنتجات داخل المودال */
+.modal-body .position-relative {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* تحسين الصور داخل السلة */
+.modal-body img {
+  border-radius: 8px;
+}
+
+/* تحسينات عامّة */
+nav {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+nav a {
+  text-decoration: none;
+}
+
+input::placeholder {
+  color: #333 !important;
+}

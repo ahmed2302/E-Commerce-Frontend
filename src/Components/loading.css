@@ -1,0 +1,60 @@
+/* Fullscreen dark overlay */
+.dashboard-loading {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(120deg, #1e1e2f, #2d2d44); /* dark slate blue/gray */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  font-family: 'Segoe UI', 'Poppins', sans-serif;
+}
+
+/* Wrapper for the loader content */
+.loader-box {
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Shopping cart icon with motion */
+.cart-icon-moving {
+  font-size: 3.5rem;
+  color: #00b4d8; /* Soft admin-style cyan */
+  animation: moveCartDash 2s ease-in-out infinite;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 6px rgba(0, 180, 216, 0.4));
+}
+
+/* Loading text label */
+.loader-label {
+  font-size: 1rem;
+  color: #e0e0e0;
+  font-weight: 500;
+  animation: fadeInUp 1.2s ease-in-out;
+  letter-spacing: 0.3px;
+}
+
+/* Horizontal motion of the icon */
+@keyframes moveCartDash {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Smooth text appearance */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

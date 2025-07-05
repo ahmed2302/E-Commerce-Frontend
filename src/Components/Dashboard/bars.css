@@ -1,0 +1,35 @@
+.top-bar {
+  background: linear-gradient(135deg,#16213e, #0f3460);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  color: aliceblue;
+  z-index: 2;
+  padding: 0 20px;
+}
+
+.side-bar {
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  color: aliceblue;
+  z-index: 1;
+  height: 100vh;
+}
+.side-bar-link {
+  color: aliceblue;
+  font-size: 18px;
+  transition: 0.3s;
+  margin: 0 8px;
+  border-radius: 6px;
+}
+.side-bar .active {
+  background-color: #191c45;
+  color: #f0c93d;
+}
+.side-bar-link:not(.active):hover {
+  color: #22366c;
+}
+
+a {
+  text-decoration: none !important;
+}
